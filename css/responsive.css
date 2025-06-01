@@ -1,0 +1,160 @@
+/*media queries start*/
+
+@media screen and (max-width:1920px){
+	.gallery{
+		grid-template-columns: repeat(auto-fill,minmax(min(260px, 100%), 1fr));
+	}
+}
+@media screen and (max-width:991px){
+	.site-header .container {
+		grid-template-columns: auto 1fr auto;
+	}
+	.site-nav {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 300px;
+		z-index: 9;
+	    background:#1d2532;
+	    transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
+	    transform: translateX(-100%);
+	}
+
+	.site-nav ul {
+	    display: block;
+	    padding: 40px 60px 0;
+	}
+
+	.site-nav ul li {
+		margin: 0 0 10px;
+	}
+	.menu-toggle{
+		display: block;
+	}
+
+	.closed-menu {
+		font-size: 40px;
+		color: #fff;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		display: inline-block;
+		line-height: 1;
+	}
+
+	li.closed-menu a {
+		font: inherit;
+		padding: 0;
+		color: #fff;
+	}
+
+	.closed-menu img {
+		max-width: 25px;
+		filter: invert(1);
+	}
+
+	.toggle .site-nav {
+    	transform: translateX(0);
+	}
+
+
+	.nav-right {
+		margin-left: auto;
+		margin-right: 20px;
+	}
+	.site-hero .swiper-button-next {
+		bottom: 60px;
+		left: 85px;
+		right: auto;
+		top: auto;
+	}
+	.site-hero .swiper-button-prev {
+		left: auto;
+		right: auto;
+		left: 20px;
+		bottom: 60px;
+		top: auto;
+	}
+	.useful-links {
+		padding-left: 80px;
+	}
+}
+
+@media screen and (max-width:768px){
+		
+	.heading-deatils {
+		margin: 0 0 50px;
+	}
+
+	.section-title {
+		font-size: 32px;
+	}
+	.footer-body .row {
+		row-gap: 30px;
+	}
+	.contact-us {
+		padding-left: 0;
+	}
+	.useful-links {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width:575px){
+	.site-nav{
+		width: 100%;
+	}
+	.hero-content {
+		height: 100dvh;
+	}
+	.hero-content h1 {
+		font-size: 36px;
+	}
+	.section-title {
+		font-size: 28px;
+	}
+	.sub-title {
+		font-size: 14px;
+	}
+	.primary-btn {
+		font-size: 12px;
+	}
+	.secondary-btn {
+		font-size: 12px;
+	}
+	.youtube-shorts, .about, .our-services, .our-work, .testimonial, .booking, .site-footer {
+		padding: 50px 0;
+	}
+	.about-img {
+		grid-template-columns: 100%;
+	}
+	.secondary-img {
+		transform: translate(0%, 0) !important;
+		max-width: 250px;
+		margin-top: -150px !important;
+	}
+	.swiper-button-next, .swiper-button-prev {
+		width: 40px;
+		height: 40px;
+	}
+	.site-hero .swiper-button-next {
+		left: 75px;
+	}
+
+
+}
+
+@media screen and (max-width:480px){
+	.hero-content h1 {
+		font-size: 32px;
+	}
+	.service-card {
+		grid-template-columns:100%;
+	}
+	.booking-form {
+		grid-template-columns: 100%;
+	}
+}
+	
